@@ -40,11 +40,18 @@ html {
 }
 
 body {
+     display: flex;
+     flex-direction: column;
      color: #666666;
      font-size: 14px;
      font-family: 'Poppins', sans-serif;
      line-height: 1.80857;
      font-weight: normal;
+     
+}
+
+main {
+     overflow: hidden;
 }
 
 a {
@@ -113,7 +120,7 @@ h4 a,
 h5 a,
 h6 a {
      color: #212121;
-     text-decoration: none!important;
+     text-decoration: none !important;
      opacity: 1
 }
 
@@ -158,7 +165,7 @@ img {
      height: auto;
 }
 
- :focus {
+:focus {
      outline: 0;
 }
 
@@ -578,22 +585,22 @@ button {
 /** mobile section **/
 
 
-/** clients section **/
+/** nosotros section **/
 
-.clients {
+.nosotros {
      margin-top: 40px;
      padding-top: 60px;
 }
 
-.clients .titlepage h2 {
+.nosotros .titlepage h2 {
      color: #202021;
 }
 
-.clients .titlepage span {
+.nosotros .titlepage span {
      margin-left: 56px;
 }
 
-.clients_box {
+.nosotros_box {
      text-align: center;
      background: #e2e3e3;
      padding: 50px 15px;
@@ -601,12 +608,12 @@ button {
      position: relative;
 }
 
-.clients_box p {
+.nosotros_box p {
      font-size: 17px;
      line-height: 35px;
 }
 
-.clients_box::after {
+.nosotros_box::after {
      position: absolute;
      content: "";
      width: 42px;
@@ -635,7 +642,7 @@ button {
 }
 
 
-/** end clients section **/
+/** end nosotros section **/
 
 
 /** contact section **/
@@ -809,3 +816,13 @@ ul.cont li {
      width: 100%;
 }
 
+iframe {
+     display: block;
+     /* iframes are inline by default */
+     background: #000;
+     border: none;
+     /* Reset default border */
+     height: 100vh;
+     /* Viewport-relative units */
+     width: 100vw;
+}
